@@ -23,18 +23,20 @@ const Table = () => {
     <div style={{ display: "flex", justifyContent: "center" }}>
       <table>
         <thead>
-          <th>
-            <button onClick={() => sorting("first_name")}>First Name</button>
-          </th>
-          <th>
-            <button onClick={() => sorting("last_name")}>Last Name</button>
-          </th>
-          <th>
-            <button onClick={() => sorting("email")}>Email</button>
-          </th>
-          <th>
-            <button onClick={() => sorting("gender")}>Gender</button>
-          </th>
+          <tr>
+            <th>
+              <button onClick={() => sorting("first_name")}>First Name</button>
+            </th>
+            <th>
+              <button onClick={() => sorting("last_name")}>Last Name</button>
+            </th>
+            <th>
+              <button onClick={() => sorting("email")}>Email</button>
+            </th>
+            <th>
+              <button>Gender</button>
+            </th>
+          </tr>
         </thead>
         <tbody>
           {data.map((item) => (
